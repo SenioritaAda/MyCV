@@ -1,0 +1,108 @@
+
+.myself{
+    border-radius: 50%;
+    box-shadow: 0 0 0 5px black; 
+}
+.icon-square {
+    width: 3rem;
+    height: 3rem;
+    border-radius: .75rem;
+}
+
+h1, h3, a{
+ font-family: Chronicle;
+}
+p, .btn{
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.fullscreen-card {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: white;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.fullscreen-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.fullscreen-card .card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.timeline {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: Black; /* Timeline line color */
+    left: 50%;
+    margin-left: -1px;
+  }
+  .timeline-item {
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    position: relative;
+    background-color: #ffffff; /* Timeline item background color */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  .timeline-item::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: black; /* Timeline dot color */
+    border-radius: 50%;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+  }
+  .timeline-item .timeline-content {
+    margin-top: 10px;
+  }
+  .timeline-item .timeline-content h2 {
+    margin-top: 0;
+    font-size: 18px;
+    color: black; /* Timeline heading color */
+  }
+  .timeline-item .timeline-content p {
+    margin: 10px 0;
+  }
+  .skills {
+    border-top: 1px solid #ddd; /* Separator line */
+  }
+  .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .skill-item {
+    background-color: rgba(0, 0, 0, 0.221);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+  }
